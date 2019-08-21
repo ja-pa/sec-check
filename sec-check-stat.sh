@@ -1,4 +1,6 @@
 #!/bin/bash
+# This script computes statistic for security features
+# activeted in medkit or package elf files
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 DIR_DATA=""
