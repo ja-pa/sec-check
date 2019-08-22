@@ -72,13 +72,13 @@ print_stat()
 	nx_p=$(calc_percent $nx $count)
 	fortify_p=$(calc_percent $fortify $count)
 
-	printf "	count	percent\n"
-	printf "______________________\n"
-	printf "canary	$canary	$canary_p\n"
-	printf "pie	$pie	$pie_p\n"
-	printf "relro	$relro	$relro_p\n"
-	printf "nx	$nx	$nx_p\n"
-	printf "fortify	$fortify	$fortify_p\n"
+	printf "		count	percent\n"
+	printf "_______________________________\n"
+	printf "Stack Guards	$canary	$canary_p\n"
+	printf "ALSR		$pie	$pie_p\n"
+	printf "RELRO		$relro	$relro_p\n"
+	printf "Non-Exec Stack	$nx	$nx_p\n"
+	printf "Fortify SRC	$fortify	$fortify_p\n"
 	printf "\n"
 	printf "Item_count=$count\n"
 }
